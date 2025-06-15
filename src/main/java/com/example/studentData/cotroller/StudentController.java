@@ -30,6 +30,8 @@ public class StudentController {
 	public ResponseEntity<ResponseStructure<Student>> saveEmp(@RequestBody Student student) {
 		Student savedStudent = service.addStudent(student);
 
+		System.out.println("ffgfdx");
+
 		ResponseStructure<Student> structure = new ResponseStructure<>();
 		structure.setCode(HttpStatus.OK.value());
 		structure.setMsg("Successfully Added");
